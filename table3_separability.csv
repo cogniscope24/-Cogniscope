@@ -1,0 +1,7 @@
+Feature,Comparison,Cohens_d,p_value,p_str
+Coherence Mean,Healthy vs MCI,2.76,0.0,0.0
+Coherence Mean,MCI vs EarlyAD,2.58,0.0,0.0
+Behavioral Entropy,Healthy vs MCI,1.76,0.0,0.0
+Behavioral Entropy,MCI vs EarlyAD,0.95,0.0,0.0
+Slope (Drift Rate),Healthy vs MCI,2.76,0.0,0.0
+Slope (Drift Rate),MCI vs EarlyAD,2.58,0.0,0.0
