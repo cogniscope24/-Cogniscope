@@ -1,0 +1,69 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "sc": "https://schema.org/"
+  },
+  "@type": "sc:Dataset",
+  "name": "Cogniscope_Synthetic_Datasets",
+  "description": "Two synthetic datasets for longitudinal cognitive AI evaluation: simulation-level (200,000 records) and deployment-level (5,040 records)",
+  "license": "https://opensource.org/licenses/MIT",
+  "url": "https://github.com/cogniscope24/-Cogniscope.git",
+  "version": "1.0.0",
+  "datePublished": "2025-05-06",
+  "citation": "Cogniscope Synthetic Datasets. Synthetically generated using Groq AI for longitudinal cognitive AI benchmarking research.",
+  "cr:RAIMetadata": {
+    "@type": "cr:RAIMetadata",
+    "rai:dataSource": "Synthetically generated; no real user data",
+    "rai:dataSensitivity": "None — fully synthetic",
+    "rai:personalData": "None collected",
+    "rai:intendedUse": "Methodological research; benchmarking temporal AI models",
+    "rai:prohibitedUse": "Clinical diagnosis; high-stakes decision making",
+    "rai:humanSubjects": "No — all data is synthetic",
+    "rai:irbApproval": "STUDY00028341",
+    "rai:dataCollection": "Algorithmic simulation using Python"
+  },
+  "cr:recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "name": "simulation_level",
+      "description": "Simulation-level dataset with 200,000 records for longitudinal cognitive AI evaluation"
+    },
+    {
+      "@type": "cr:RecordSet",
+      "name": "deployment_level",
+      "description": "Deployment-level dataset with 5,040 records for longitudinal cognitive AI evaluation"
+    }
+  ],
+  "rai:dataLimitations": "This dataset is limited to synthetically generated cognitive performance data and may not generalize to real-world clinical or user populations. It is not recommended for clinical diagnosis, mental health assessment, or any high-stakes decision-making without extensive real-world validation.",
+  "rai:dataBiases": "As a fully synthetic dataset, biases stem from the assumptions embedded in the simulation algorithms rather than real-world sampling. The data may not capture the full diversity of cognitive patterns across different age groups, cultures, or neurological conditions. No real demographic groups were used in generation.",
+  "rai:personalSensitiveInformation": "This dataset contains no personal or sensitive information. It is fully synthetic and was not derived from any real individuals. No categories such as health data, age, gender, geography, or political beliefs are present.",
+  "rai:dataUseCases": "This dataset is intended to benchmark and evaluate temporal AI models in longitudinal cognitive performance settings. Validated use cases: methodological research and simulation-based benchmarking of AI systems. Not validated for clinical decision support, real-time monitoring, or deployment in production healthcare systems.",
+  "rai:dataSocialImpact": "Positive impact: enables reproducible benchmarking of AI models on longitudinal cognitive tasks without privacy risks. Risks: potential misuse for clinical diagnosis or patient profiling without appropriate validation. Mitigation: released under MIT license with explicit prohibition on clinical and high-stakes use.",
+  "rai:hasSyntheticData": true,
+  "prov:wasDerivedFrom": [
+    {
+      "@id": "https://groq.com",
+      "prov:label": "Groq AI",
+      "sc:license": "Groq Terms of Service"
+    },
+    {
+      "@id": "https://talkbank.org/dementia/ADReSSo-2021/",
+      "prov:label": "ADReSSo_2021",
+      "sc:license": "DementiaBank Restricted Access Agreement"
+    }
+  ],
+  "prov:wasGeneratedBy": [
+    {
+      "@type": "prov:Activity",
+      "prov:type": {
+        "@id": "https://www.wikidata.org/wiki/Q5227332"
+      },
+      "prov:label": "Synthetic Data Generation",
+      "sc:description": "Synthetic data was generated from the ADReSSo 2021 dementia dataset as a seed, using Groq AI language models and Python-based algorithmic simulation to produce longitudinal cognitive performance records."
+    }
+  ]
+}
