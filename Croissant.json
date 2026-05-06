@@ -1,0 +1,36 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/"
+  },
+  "@type": "sc:Dataset",
+  "name": "Cogniscope Synthetic Datasets",
+  "description": "Two synthetic datasets for longitudinal cognitive AI evaluation: simulation-level (200,000 records) and deployment-level (5,040 records)",
+  "license": "https://opensource.org/licenses/MIT",
+  "url": "",
+  "cr:RAIMetadata": {
+    "@type": "cr:RAIMetadata",
+    "rai:dataSource": "Synthetically generated; no real user data",
+    "rai:dataSensitivity": "None — fully synthetic",
+    "rai:personalData": "None collected",
+    "rai:intendedUse": "Methodological research; benchmarking temporal AI models",
+    "rai:prohibitedUse": "Clinical diagnosis; high-stakes decision making",
+    "rai:humanSubjects": "No — all data is synthetic",
+    "rai:irbApproval": "STUDY00028341",
+    "rai:dataCollection": "Algorithmic simulation using Python"
+  },
+  "cr:recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "name": "simulation_level",
+      "description": "Simulation-level dataset with 200,000 records for longitudinal cognitive AI evaluation"
+    },
+    {
+      "@type": "cr:RecordSet",
+      "name": "deployment_level",
+      "description": "Deployment-level dataset with 5,040 records for longitudinal cognitive AI evaluation"
+    }
+  ]
+}
