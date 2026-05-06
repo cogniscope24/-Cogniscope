@@ -21,7 +21,8 @@ python3 cogniscope_simulation.py
 
 ## Outputs
 All results saved to results/ folder.
-
+All the Dataset Outputs are in the respective Zip folders. 
+The Supabase Simulation Framework Output is created on the basis of the Supabase Dataset contents. 
  
 
 ## License
